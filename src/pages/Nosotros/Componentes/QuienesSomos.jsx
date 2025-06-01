@@ -5,7 +5,7 @@ import { nosotros } from '../../../Texto/Texto';
 
 const QuienesSomos = () => {
   return (
-    <section className="py-16 px-4 md:px-8">
+    <section className="py-22 px-4 md:px-8">
       <div className="container mx-auto max-w-6xl">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
