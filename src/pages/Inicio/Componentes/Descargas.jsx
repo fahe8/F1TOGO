@@ -1,9 +1,9 @@
 import React from "react";
-import shape from "../assets/shape.svg";
-import logo from "../assets/logo2.png";
-import AppStore from "../assets/AppStore.svg";
-import PlayStore from "../assets/PlayStore.svg";
-import { franjaApp } from "../Texto/Texto";
+import shape from "../../../assets/shape.svg";
+import logo from "../../../assets/logo2.png";
+import AppStore from "../../../assets/AppStore.svg";
+import PlayStore from "../../../assets/PlayStore.svg";
+import { franjaApp } from "../../../Texto/Texto";
 import { Link } from "react-router";
 const Descargas = () => {
   return (

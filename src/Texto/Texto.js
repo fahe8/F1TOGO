@@ -45,4 +45,50 @@ const footer = {
   tyc: "Terminos de uso",
 };
 
-export { hero, seccionServicios, franjaApp, footer };
+const nosotros = {
+  quienesSomos: {
+    titulo: "¿Quiénes Somos?",
+    descripcion: "F1 TO GO es una empresa comprometida con la movilidad urbana, facilitando el desplazamiento seguro y eficiente de personas en la ciudad mediante nuestra innovadora aplicación móvil que conecta pasajeros con conductores profesionales."
+  },
+  misionVision: {
+    mision: {
+      titulo: "Nuestra Misión",
+      descripcion: "Transformar la movilidad urbana proporcionando un servicio de transporte seguro, eficiente y accesible que mejore la calidad de vida de nuestros usuarios y conductores, contribuyendo al desarrollo sostenible de las ciudades."
+    },
+    vision: {
+      titulo: "Nuestra Visión",
+      descripcion: "Ser la plataforma líder en soluciones de movilidad urbana, reconocida por nuestra excelencia en servicio, innovación tecnológica y compromiso con la seguridad y satisfacción de nuestra comunidad."
+    }
+  },
+  valores: {
+    titulo: "Nuestros Valores",
+    lista: [
+      {
+        titulo: "Seguridad",
+        descripcion: "Priorizamos la seguridad de nuestros usuarios y conductores en cada viaje."
+      },
+      {
+        titulo: "Innovación",
+        descripcion: "Buscamos constantemente nuevas formas de mejorar nuestro servicio."
+      },
+      {
+        titulo: "Transparencia",
+        descripcion: "Mantenemos una comunicación clara y honesta con nuestra comunidad."
+      },
+      {
+        titulo: "Compromiso",
+        descripcion: "Nos dedicamos a brindar el mejor servicio posible."
+      },
+      {
+        titulo: "Accesibilidad",
+        descripcion: "Hacemos que la movilidad sea fácil y accesible para todos."
+      },
+      {
+        titulo: "Responsabilidad",
+        descripcion: "Actuamos con responsabilidad hacia nuestros usuarios y la sociedad."
+      }
+    ]
+  }
+};
+
+export { hero, seccionServicios, franjaApp, footer, nosotros };
