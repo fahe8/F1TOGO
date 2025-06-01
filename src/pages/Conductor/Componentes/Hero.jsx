@@ -1,6 +1,6 @@
 import React from 'react'
 import { motion } from 'framer-motion'
-import servicio1 from '../../../assets/servicio1.jpg'
+import servicio1 from '../../../assets/heroImage.jpg'
 import { FaTaxi, FaUserFriends } from 'react-icons/fa'
 
 const Hero = () => {

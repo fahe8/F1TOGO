@@ -1,6 +1,6 @@
 import React from 'react'
 import { motion } from 'framer-motion'
-import servicio1 from '../../../assets/servicio1.jpg'
+import registrarse from '../../../assets/beneficios/registrarse.png'
 
 const ComoRegistrarse = () => {
   return (
@@ -29,7 +29,7 @@ const ComoRegistrarse = () => {
           >
             <div className="aspect-[4/3] rounded-2xl overflow-hidden shadow-xl">
               <img 
-                src={servicio1} 
+                src={registrarse} 
                 alt="Registro F1TOGO" 
                 className="w-full h-full object-cover"
               />

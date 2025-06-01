@@ -13,7 +13,7 @@ const MisionVision = () => {
           alt="Background" 
           className="w-full h-full object-cover opacity-20"
         />
-        <div className="absolute inset-0 bg-primary/40" />
+        <div className="absolute inset-0 bg-primary/80" />
       </div>
 
       <div className="container mx-auto max-w-6xl relative z-10">
@@ -24,7 +24,7 @@ const MisionVision = () => {
             transition={{ duration: 0.6 }}
             className="flex-1"
           >
-            <h2 className="text-4xl md:text-5xl font-bold text-white mb-8">Our Vision</h2>
+            <h2 className="text-4xl md:text-5xl font-bold text-white mb-8">Nuestra Visión</h2>
             <div className="flex items-start gap-6">
               <div className="w-16 h-16 rounded-full bg-cyan-500 flex items-center justify-center flex-shrink-0">
                 <FaBinoculars className="text-2xl text-white" />
@@ -43,7 +43,7 @@ const MisionVision = () => {
             transition={{ duration: 0.6 }}
             className="flex-1"
           >
-            <h2 className="text-4xl md:text-5xl font-bold text-white mb-8">Our Mission</h2>
+            <h2 className="text-4xl md:text-5xl font-bold text-white mb-8">Nuestra Mision</h2>
             <div className="flex items-start gap-6">
               <div className="w-16 h-16 rounded-full bg-red-500 flex items-center justify-center flex-shrink-0">
                 <FaLightbulb className="text-2xl text-white" />
@@ -62,7 +62,7 @@ const MisionVision = () => {
             transition={{ duration: 0.6 }}
             className="flex-1"
           >
-            <h2 className="text-4xl md:text-5xl font-bold text-white mb-8">Our Goals</h2>
+            <h2 className="text-4xl md:text-5xl font-bold text-white mb-8">Nuestra meta</h2>
             <div className="flex items-start gap-6">
               <div className="w-16 h-16 rounded-full bg-blue-900 flex items-center justify-center flex-shrink-0">
                 <FaBullseye className="text-2xl text-white" />

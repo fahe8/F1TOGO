@@ -1,5 +1,8 @@
 import React from "react";
 import { motion } from "framer-motion";
+import pagos from "../../../assets/beneficios/pagos.png";
+import horarios from "../../../assets/beneficios/horario.png";
+import ingresos from "../../../assets/beneficios/ingresos.png";
 import { FaMoneyBillWave, FaClock, FaShieldAlt } from "react-icons/fa";
 import Card from "../../../Componentes/Card";
 
@@ -7,21 +10,24 @@ import Card from "../../../Componentes/Card";
 const Beneficios = () => {
   const beneficios = [
     {
+      image: ingresos,
       icon: FaMoneyBillWave,
       title: "Mejores ingresos",
       description:
         "Genera ingresos competitivos y estables con nuestra plataforma.",
     },
     {
+      image: horarios,
       icon: FaClock,
       title: "Horario flexible",
       description: "Trabaja cuando quieras, tú controlas tu tiempo.",
     },
     {
+      image: pagos,
       icon: FaShieldAlt,
-      title: "Seguridad garantizada",
+      title: "Pagos Seguros",
       description:
-        "Contamos con medidas de seguridad para proteger a nuestros conductores.",
+        "Recibe tus ganacias de manera puntual y transparente",
     },
   ];
 
@@ -42,6 +48,7 @@ const Beneficios = () => {
             <Card
               key={index}
               icon={beneficio.icon}
+              image={beneficio.image}
               title={beneficio.title}
               description={beneficio.description}
               index={index}

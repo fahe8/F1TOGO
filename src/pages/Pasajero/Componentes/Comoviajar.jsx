@@ -1,5 +1,6 @@
 import React from 'react'
 import { motion } from 'framer-motion'
+import comoviajar from '../../../assets/pasajeros/comoviajar.png'
 import { FaMapMarkedAlt, FaCarSide, FaUserCheck, FaStar, FaRoute } from 'react-icons/fa'
 
 const ComoViajar = () => {
@@ -38,6 +39,8 @@ const ComoViajar = () => {
           ¿Cómo viajar con F1TOGO?
         </motion.h2>
 
+        <div className='grid grid-cols-1 lg:grid-cols-2 '>
+          <img src={comoviajar} alt="" srcset="" className='drop-shadow-xl'/>
         <div className="space-y-6">
           {pasos.map((paso, index) => (
             <motion.div
@@ -58,6 +61,7 @@ const ComoViajar = () => {
               </div>
             </motion.div>
           ))}
+        </div>
         </div>
 
         <motion.div
