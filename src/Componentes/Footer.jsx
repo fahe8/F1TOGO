@@ -4,7 +4,7 @@ import facebook from "../assets/Facebook.svg";
 import instagram from "../assets/Instagram.svg";
 import twitter from "../assets/Twitter.svg";
 import linkedin from "../assets/LinkedIn.svg";
-import { Link } from "react-router";
+import { Link } from "react-router-dom";
 import { footer } from "../Texto/Texto";
 
 const Footer = () => {
@@ -16,16 +16,16 @@ const Footer = () => {
         </div>
         <ul className="flex flex-col lg:flex-row justify-center gap-8 w-[1fr]">
           <li>
-            <Link>Inicio</Link>
+            <Link to="/">Inicio</Link>
           </li>
           <li>
-            <Link>Nosotros</Link>
+            <Link to="/nosotros">Nosotros</Link>
           </li>
           <li>
-            <Link>Conductor</Link>
+            <Link to="/conductor">Conductor</Link>
           </li>
           <li>
-            <Link>Pasajero</Link>
+            <Link to="/pasajero">Pasajero</Link>
           </li>
         </ul>
         <div className="flex flex-col items-end lg:flex-row justify-center gap-2 w-[20%]">
@@ -36,8 +36,12 @@ const Footer = () => {
         </div>
       </div>
       <div className=" flex justify-center gap-8 pt-4">
-        <p className="underline">{footer.pyp}</p>
-        <p className="underline">{footer.tyc}</p>
+        <Link to="/politicas-privacidad" className="underline hover:text-primary transition-colors">
+          {footer.pyp}
+        </Link>
+        <Link to="/terminos-uso" className="underline hover:text-primary transition-colors">
+          {footer.tyc}
+        </Link>
       </div>
     </footer>
   );

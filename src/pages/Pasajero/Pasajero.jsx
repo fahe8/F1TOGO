@@ -2,9 +2,8 @@ import React from 'react'
 import Header from '../../Componentes/Header'
 import Footer from '../../Componentes/Footer'
 import Hero from './Componentes/Hero'
-import Beneficios from './Componentes/Beneficios'
-import Requisitos from './Componentes/Requisitos'
-import ComoRegistrarse from './Componentes/ComoRegistrarse'
+import PorqueElegirnos from './Componentes/PorqueElegirnos'
+import ComoViajar from './Componentes/Comoviajar'
 
 const Pasajero = () => {
   return (
@@ -12,9 +11,8 @@ const Pasajero = () => {
       <Header/>
       <main className="min-h-screen bg-gray-50">
         <Hero />
-        <Beneficios />
-        <Requisitos />
-        <ComoRegistrarse />
+        <PorqueElegirnos />
+        <ComoViajar />
       </main>
       <Footer/>
     </>
