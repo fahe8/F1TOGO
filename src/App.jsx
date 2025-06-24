@@ -1,4 +1,5 @@
 import React from 'react'
+import './App.css'
 import { Routes, Route } from 'react-router-dom'
 import Inicio from './pages/Inicio/Inicio'
 import Conductor from './pages/Conductor/Conductor'
@@ -7,6 +8,7 @@ import Nosotros from './pages/Nosotros/Nosotros'
 import PoliticasPrivacidad from './pages/PoliticasPrivacidad/PoliticasPrivacidad'
 import TerminosUso from './pages/TerminosUso/TerminosUso'
 import ScrollToTop from './Componentes/ScrollToTop'
+import TawkTo from './Componentes/TawkTo'
 
 function App() {
   return (
@@ -20,6 +22,7 @@ function App() {
         <Route path="/terminos-uso" element={<TerminosUso />} />
       </Routes>
       <ScrollToTop />
+      <TawkTo />
     </>
   )
 }

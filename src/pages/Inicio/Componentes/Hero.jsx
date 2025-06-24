@@ -41,19 +41,20 @@ const Hero = () => {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8 }}
-              className="text-5xl lg:text-7xl font-bold leading-tight"
+              className="text-5xl lg:text-5xl font-bold leading-tight"
             >
-              Tu viaje seguro <br />
-              <span className="text-yellow-400">a un toque</span> de distancia
+              Aplicación de movilidad 
+              <br />
+              <span className="text-yellow-400">rápida y confiable</span>  en la palma de tu mano.
             </motion.h1>
             
             <motion.p 
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.2 }}
-              className="text-xl lg:text-2xl font-light"
+              className="text-xl lg:text-xl font-light"
             >
-              Viaja con confianza y comodidad. Conductores profesionales y vehículos de calidad te esperan 24/7.
+             Nuestro servicio de movilidad urbana está diseñado para que llegues a donde necesites de forma rápida y segura.
             </motion.p>
 
             <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
