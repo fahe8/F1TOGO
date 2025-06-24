@@ -189,10 +189,10 @@ const TerminosUso = () => {
                 </p>
                 <div className="flex flex-wrap gap-4">
                   <span className="text-gray-600 bg-white bg-opacity-20 px-4 py-2 rounded-full text-sm font-medium">
-                    Última actualización: Enero 2024
+                    Última actualización: Junio 2025
                   </span>
                   <span className="text-gray-600 bg-white bg-opacity-20 px-4 py-2 rounded-full text-sm font-medium">
-                    Versión 2.1
+                    Versión 1
                   </span>
                 </div>
               </motion.div>

@@ -207,11 +207,9 @@ const PoliticasPrivacidad = () => {
                 </div>
                 <div className="text-gray-600 flex flex-wrap gap-4 mt-6">
                   <span className="bg-white bg-opacity-20 px-4 py-2 rounded-full text-sm font-medium">
-                    Última actualización: Enero 2024
+                    Última actualización: Junio 2025
                   </span>
-                  <span className="bg-white bg-opacity-20 px-4 py-2 rounded-full text-sm font-medium">
-                    GDPR Compliant
-                  </span>
+                 
                 </div>
               </motion.div>
             </div>
