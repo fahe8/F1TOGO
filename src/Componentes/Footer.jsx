@@ -22,10 +22,10 @@ const Footer = () => {
             <Link to="/nosotros">Nosotros</Link>
           </li>
           <li>
-            <Link to="/conductor">Conductor</Link>
+            <Link to="/pasajero">Pasajero</Link>
           </li>
           <li>
-            <Link to="/pasajero">Pasajero</Link>
+            <Link to="/conductor">Conductor</Link>
           </li>
         </ul>
         <div className="flex flex-col items-end lg:flex-row justify-center gap-2 w-[20%]">
