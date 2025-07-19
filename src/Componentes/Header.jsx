@@ -67,21 +67,23 @@ const Header = () => {
             <li key={link.path} className="relative group">
               <Link
                 to={link.path}
-                className={`py-4 px-3 relative after:absolute after:left-0 after:bottom-2 after:h-[2px] after:bg-black after:transition-all after:duration-300 group-hover:after:w-full ${location.pathname === link.path ? "after:w-full font-bold text-primary" : "after:w-0"}`}
+                className={`py-4 px-10 text-xl relative after:absolute after:left-0 after:bottom-2 after:h-[2px] after:bg-black after:transition-all after:duration-300 group-hover:after:w-full ${location.pathname === link.path ? "after:w-full font-bold text-primary" : "after:w-0"}`}
               >
                 {link.name}
               </Link>
             </li>
           ))}
-          <li>
+          
+        </ul>
+
+        <div className="hidden md:flex">
             <Link
               to="/descargar"
               className="bg-primary py-3 px-6 rounded-2xl text-white hover:bg-primary/90 transition-colors"
             >
               Descargar
             </Link>
-          </li>
-        </ul>
+          </div>
 
         {/* Menú móvil */}
         <AnimatePresence>

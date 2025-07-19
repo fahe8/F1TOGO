@@ -10,7 +10,7 @@ const Valores = () => {
     "Transparencia": FaHandshake,
     "Compromiso": FaHeart,
     "Accesibilidad": FaUniversalAccess,
-    "Responsabilidad": FaBalanceScale
+    "Integridad": FaBalanceScale
   };
 
   return (

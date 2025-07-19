@@ -30,7 +30,7 @@ const ComoRegistrarse = () => {
             <div className="aspect-[4/3] rounded-2xl overflow-hidden shadow-xl">
               <img 
                 src={registrarse} 
-                alt="Registro F1TOGO" 
+                alt="Registro F1ToGo" 
                 className="w-full h-full object-cover"
               />
             </div>

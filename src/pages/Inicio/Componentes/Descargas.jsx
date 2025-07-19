@@ -18,7 +18,7 @@ const Descargas = () => {
             <h3 className="text-3xl font-bold mb-4">{franjaApp.titulo}</h3>
             <p>{franjaApp.subtitulo}</p>
           </div>
-          <img src={logo} alt="" className="w-[120px]"/>
+          <img src={logo} alt="" className="w-[220px]"/>
           <div className=" flex flex-col gap-4">
             <Link to={""}>
               <img src={AppStore} alt="" width={180} />

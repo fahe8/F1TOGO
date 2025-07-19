@@ -16,19 +16,19 @@ const seccionServicios = {
     {
       titulo: " Comunicacion directa",
       subtitulo:
-        "F1 TO GO es una empresa interesada en apoyar el desplazamiento y movimiento de la población dentro las ciudades, para esto implementamos una aplicación móvil que permite la comunicación entre usuarios (user) y/o pasajeros y los conductores de taxi de la ciudad (drivers).",
+        "F1 TO GO es una empresa interesada en apoyar el desplazamiento y movimiento de la población dentro las ciudades, para esto implementamos una aplicación móvil que permite la comunicación entre usuarios (user) y/o pasajeros y los conductores de taxi de la ciudad (driver).",
       image: servicio1,
     },
     {
       titulo: "Transparencia",
       subtitulo:
-        "F1 TO GO le brinda un servicio de transporte puerta a puerta donde se sugiere una ruta de desplazamiento, el tiempo de recogida, el tiempo de viaje, el valor del servicio de transporte y le ofrece diferentes opciones para el pago de este servicio.",
+        "F1 TO GO le brinda un servicio de transporte puerta a puerta donde se sugiere una ruta de desplazamiento, el tiempo de recogida, el tiempo de viaje y el valor del servicio de transporte ",
       image: servicio2,
     },
     {
       titulo: "Seguridad",
       subtitulo:
-        "F1 TO GO garantiza un servicio seguro y legal, ya que opera con taxis autorizados que cuentan con permisos y pólizas de cobertura. Además, la seguridad se refuerza mediante la identificación de todos los usuarios y conductores, con sus datos almacenados en nuestra base de datos.",
+        "F1 TO GO garantiza un servicio seguro y legal, opera con vehiculos autorizados; Además, la seguridad se refuerza mediante la identificación de todos los usuarios y conductores, con sus datos almacenados en nuestra base de datos.",
       image: servicio3,
     },
   ],
@@ -84,7 +84,7 @@ const nosotros = {
         descripcion: "Hacemos que la movilidad sea fácil y accesible para todos."
       },
       {
-        titulo: "Responsabilidad",
+        titulo: "Integridad",
         descripcion: "Actuamos con responsabilidad hacia nuestros usuarios y la sociedad."
       }
     ]

@@ -9,7 +9,7 @@ const Hero = () => {
       <div className="absolute inset-0 z-0">
         <img 
           src={servicio1} 
-          alt="Conductor F1TOGO" 
+          alt="Conductor F1ToGo" 
           className="w-full h-full object-cover"
         />
         <div className="absolute inset-0 bg-gradient-to-r from-primary/90 to-primary/40" />
@@ -23,7 +23,7 @@ const Hero = () => {
             transition={{ duration: 0.8 }}
             className="text-4xl md:text-6xl font-bold mb-6"
           >
-            Únete como Conductor en F1TOGO
+            Únete como Conductor en F1ToGo
           </motion.h1>
 
           <motion.p

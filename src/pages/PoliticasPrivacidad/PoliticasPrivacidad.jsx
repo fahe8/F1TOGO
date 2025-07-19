@@ -21,7 +21,7 @@ const PoliticasPrivacidad = () => {
     {
       titulo: "Recopilación de Información Personal",
       icono: FaDatabase,
-      contenido: "En F1TOGO, recopilamos información personal como nombre, dirección de correo electrónico, número de teléfono y datos de ubicación para proporcionar nuestros servicios de transporte. Esta información es necesaria para facilitar los viajes y garantizar la seguridad de nuestros usuarios."
+      contenido: "En F1ToGo, recopilamos información personal como nombre, dirección de correo electrónico, número de teléfono y datos de ubicación para proporcionar nuestros servicios de transporte. Esta información es necesaria para facilitar los viajes y garantizar la seguridad de nuestros usuarios."
     },
     {
       titulo: "Uso de la Información",
@@ -166,7 +166,7 @@ const PoliticasPrivacidad = () => {
                             className="overflow-hidden"
                           >
                             <div className="px-8 py-6 border-t border-gray-100 bg-gradient-to-r from-gray-50 to-blue-50">
-                              <p className="text-gray-700 leading-relaxed text-lg">{politica.contenido}</p>
+                              <p className="text-gray-700 leading-relaxed text-lg text-justify">{politica.contenido}</p>
                             </div>
                           </motion.div>
                         )}
@@ -185,7 +185,7 @@ const PoliticasPrivacidad = () => {
               >
                 <h3 className="text-2xl font-bold mb-4">Nuestro Compromiso</h3>
                 <p className="text-green-100 leading-relaxed mb-6">
-                  En F1TOGO nos comprometemos a mantener la transparencia en el manejo de tus datos personales. 
+                  En F1ToGo nos comprometemos a mantener la transparencia en el manejo de tus datos personales. 
                   Estas políticas se actualizan regularmente para garantizar tu protección.
                 </p>
                 <div className=" grid md:grid-cols-3 gap-4">
