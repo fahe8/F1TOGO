@@ -21,7 +21,7 @@ const PoliticasPrivacidad = () => {
     {
       titulo: "Recopilación de Información Personal",
       icono: FaDatabase,
-      contenido: "En F1ToGo, recopilamos información personal como nombre, dirección de correo electrónico, número de teléfono y datos de ubicación para proporcionar nuestros servicios de transporte. Esta información es necesaria para facilitar los viajes y garantizar la seguridad de nuestros usuarios."
+      contenido: "En F1ToGo, recopilamos información personal como nombre, dirección de correo electrónico, número de teléfono, número de identificación, información de los vehículos  y datos de ubicación para proporcionar nuestros servicios de transporte. Esta información es necesaria para facilitar los viajes y garantizar la seguridad de nuestros usuarios y conductores."
     },
     {
       titulo: "Uso de la Información",
@@ -36,7 +36,7 @@ const PoliticasPrivacidad = () => {
     {
       titulo: "Compartir Información",
       icono: FaShareAlt,
-      contenido: "Solo compartimos su información con conductores y terceros necesarios para proporcionar nuestros servicios. No vendemos ni alquilamos su información personal a terceros con fines comerciales."
+      contenido: "Solo compartimos su información con conductores y terceros necesarios para proporcionar nuestros servicios. No vendemos ni alquilamos su información personal."
     },
     {
       titulo: "Derechos del Usuario",
@@ -185,7 +185,7 @@ const PoliticasPrivacidad = () => {
               >
                 <h3 className="text-2xl font-bold mb-4">Nuestro Compromiso</h3>
                 <p className="text-green-100 leading-relaxed mb-6">
-                  En F1ToGo nos comprometemos a mantener la transparencia en el manejo de tus datos personales. 
+                  En F1 To Go nos comprometemos a mantener la transparencia en el manejo de tus datos personales. 
                   Estas políticas se actualizan regularmente para garantizar tu protección.
                 </p>
                 <div className=" grid md:grid-cols-3 gap-4">

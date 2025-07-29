@@ -14,7 +14,7 @@ const ComoRegistrarse = () => {
           >
             <h2 className="text-3xl md:text-4xl font-bold mb-6 text-gray-800">¿Cómo registrarte?</h2>
             <p className="text-gray-600 mb-8">
-              Registrarte en F1 TO GO es muy fácil. Solo necesitas seguir estos pasos y pronto estarás generando ingresos como conductor profesional.
+               Registrarte en F1 To Go es muy facil es muy fácil. Solo necesitas seguir estos pasos y pronto estarás generando ingresos como conductor profesional.
             </p>
             <button className="bg-primary text-white px-8 py-3 rounded-full font-semibold hover:bg-primary/90 transition-colors duration-300">
               Comienza ahora
@@ -30,7 +30,7 @@ const ComoRegistrarse = () => {
             <div className="aspect-[4/3] rounded-2xl overflow-hidden shadow-xl">
               <img 
                 src={registrarse} 
-                alt="Registro F1ToGo" 
+                alt="Registro F1 To Go" 
                 className="w-full h-full object-cover"
               />
             </div>

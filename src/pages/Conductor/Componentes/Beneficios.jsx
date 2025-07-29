@@ -27,7 +27,7 @@ const Beneficios = () => {
       icon: FaShieldAlt,
       title: "Pagos Seguros",
       description:
-        "Recibe tus ganacias de manera puntual y transparente",
+        "El pago es directo de usuario a conductor",
     },
   ];
 

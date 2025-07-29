@@ -9,7 +9,7 @@ const Hero = () => {
       <div className="absolute inset-0 z-0">
         <img 
           src={servicio1} 
-          alt="Viaja con F1ToGo" 
+          alt="Viaja con F1 To Go" 
           className="w-full h-full object-cover"
         />
         <div className="absolute inset-0 bg-gradient-to-r from-primary/90 to-primary/40" />
@@ -23,7 +23,7 @@ const Hero = () => {
             transition={{ duration: 0.8 }}
             className="text-4xl md:text-6xl font-bold mb-6"
           >
-            Viaja seguro con F1ToGo
+            Viaja seguro con F1 To Go
           </motion.h1>
 
           <motion.p

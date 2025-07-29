@@ -36,7 +36,7 @@ const ComoViajar = () => {
           transition={{ duration: 0.6 }}
           className="text-3xl md:text-4xl font-bold text-center mb-12 text-gray-800"
         >
-          ¿Cómo viajar con F1ToGo?
+          ¿Cómo viajar con F1 To Go?
         </motion.h2>
 
         <div className='grid grid-cols-1 lg:grid-cols-2 '>

@@ -21,7 +21,7 @@ const TerminosUso = () => {
     {
       titulo: "Aceptación de Términos",
       icono: FaFileContract,
-      contenido: "Al acceder y utilizar los servicios de F1ToGo, usted acepta estar sujeto a estos términos y condiciones de uso. Si no está de acuerdo con alguno de estos términos, le recomendamos que no utilice nuestros servicios."
+      contenido: "Al acceder y utilizar los servicios de F1ToGo, usted acepta estar sujeto a estos términos y condiciones de uso. Tenga en cuenta que no es posible acceder a nuestros servicios sin haber aceptado estos Términos y Condiciones."
     },
     {
       titulo: "Requisitos de Uso",
@@ -31,12 +31,12 @@ const TerminosUso = () => {
     {
       titulo: "Responsabilidades del Usuario",
       icono: FaShieldAlt,
-      contenido: "Como usuario de F1ToGo, usted se compromete a utilizar el servicio de manera responsable, no realizar actividades ilegales, respetar a otros usuarios y conductores, y mantener un comportamiento apropiado durante los viajes."
+      contenido: "Como usuario de F1 To Go, usted se compromete a utilizar el servicio de manera responsable, no realizar actividades ilegales, respetar a otros usuarios y conductores, y mantener un comportamiento apropiado durante los viajes."
     },
     {
       titulo: "Pagos y Tarifas",
       icono: FaCreditCard,
-      contenido: "Las tarifas se calculan según la distancia y el tiempo del viaje. Los pagos se procesan a través de los métodos autorizados en la aplicación. F1ToGo se reserva el derecho de modificar las tarifas con previo aviso."
+      contenido: "Las tarifas se calculan según la distancia y el tiempo del viaje. Los pagos se procesan a través de los métodos autorizados en la aplicación. F1 To Go se reserva el derecho de modificar las tarifas con previo aviso."
     },
     {
       titulo: "Cancelaciones",
