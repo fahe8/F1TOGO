@@ -9,6 +9,7 @@ import PoliticasPrivacidad from './pages/PoliticasPrivacidad/PoliticasPrivacidad
 import TerminosUso from './pages/TerminosUso/TerminosUso'
 import ScrollToTop from './Componentes/ScrollToTop'
 import TawkTo from './Componentes/TawkTo'
+import Contacto from './pages/Contacto/Contacto'
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
         <Route path="/conductor" element={<Conductor />} />
         <Route path="/pasajero" element={<Pasajero />} />
         <Route path="/nosotros" element={<Nosotros />} />
+        <Route path="/contacto" element={<Contacto />} />
         <Route path="/politicas-privacidad" element={<PoliticasPrivacidad />} />
         <Route path="/terminos-uso" element={<TerminosUso />} />
       </Routes>
