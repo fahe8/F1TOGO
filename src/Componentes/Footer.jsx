@@ -26,6 +26,9 @@ const Footer = () => {
           <li>
             <Link to="/conductor">Conductor</Link>
           </li>
+          <li>
+            <Link to="/contacto">Contacto</Link>
+          </li>
         </ul>
         <div className="flex flex-col items-end lg:flex-row justify-center gap-2 w-[20%]">
           <a href="https://www.facebook.com/share/1AD3tG4x59/" target="_blank" rel="noopener noreferrer">

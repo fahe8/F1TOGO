@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import Header from '../../Componentes/Header'
 import Footer from '../../Componentes/Footer'
 import { motion, AnimatePresence } from 'framer-motion'
-import { FaChevronDown, FaShieldAlt, FaUserCheck, FaCreditCard, FaTimesCircle, FaFileContract } from 'react-icons/fa'
+import { FaChevronDown, FaShieldAlt, FaUserCheck, FaCreditCard, FaTimesCircle, FaFileContract, FaDownload, FaGavel, FaExclamationTriangle, FaHandshake, FaUserTie, FaPhone } from 'react-icons/fa'
 
 const TerminosUso = () => {
   const [activeIndices, setActiveIndices] = useState([0])
@@ -17,31 +17,65 @@ const TerminosUso = () => {
     })
   }
 
+  const handleDownloadPDF = () => {
+    try {
+      const link = document.createElement('a')
+      link.href = '/src/assets/politicasyterminos/TERMINOS_Y_CONDICIONES_DE_USO_F1_TO_GO.pdf'
+      link.download = 'TERMINOS_Y_CONDICIONES_DE_USO_F1_TO_GO.pdf'
+      document.body.appendChild(link)
+      link.click()
+      document.body.removeChild(link)
+    } catch (error) {
+      console.error('Error al descargar el PDF:', error)
+      alert('Error al descargar el archivo. Por favor, inténtalo de nuevo.')
+    }
+  }
+
   const terminos = [
     {
-      titulo: "Aceptación de Términos",
+      titulo: "Definiciones y Objeto",
       icono: FaFileContract,
-      contenido: "Al acceder y utilizar los servicios de F1ToGo, usted acepta estar sujeto a estos términos y condiciones de uso. Tenga en cuenta que no es posible acceder a nuestros servicios sin haber aceptado estos Términos y Condiciones."
+      contenido: "F1 TO GO S.A.S es una empresa colombiana que presta servicios de intermediación tecnológica a través de una plataforma digital que conecta usuarios que requieren servicios de transporte con conductores independientes. Estos términos regulan el uso de nuestra aplicación móvil y plataforma web, estableciendo los derechos y obligaciones de todas las partes involucradas."
     },
     {
-      titulo: "Requisitos de Uso",
+      titulo: "Aceptación de los Términos",
+      icono: FaHandshake,
+      contenido: "Al descargar, instalar, acceder o utilizar la aplicación F1 TO GO, usted acepta expresamente estos términos y condiciones. Si no está de acuerdo con alguna disposición, debe abstenerse de usar nuestros servicios. La aceptación constituye un acuerdo vinculante entre usted y F1 TO GO S.A.S."
+    },
+    {
+      titulo: "Registro y Cuenta de Usuario",
       icono: FaUserCheck,
-      contenido: "Para utilizar nuestros servicios, debe ser mayor de edad según las leyes de su país y tener la capacidad legal para aceptar estos términos. Debe proporcionar información precisa y mantener actualizada su información de cuenta."
+      contenido: "Para utilizar nuestros servicios debe: ser mayor de 18 años, proporcionar información veraz y actualizada, mantener la confidencialidad de sus credenciales de acceso, y notificar inmediatamente cualquier uso no autorizado de su cuenta. F1 TO GO se reserva el derecho de suspender o cancelar cuentas que incumplan estos requisitos."
     },
     {
-      titulo: "Responsabilidades del Usuario",
-      icono: FaShieldAlt,
-      contenido: "Como usuario de F1 To Go, usted se compromete a utilizar el servicio de manera responsable, no realizar actividades ilegales, respetar a otros usuarios y conductores, y mantener un comportamiento apropiado durante los viajes."
+      titulo: "Servicios y Funcionamiento",
+      icono: FaUserTie,
+      contenido: "F1 TO GO actúa como intermediario tecnológico entre usuarios y conductores independientes. No somos propietarios de vehículos ni empleamos conductores directamente. Los conductores son contratistas independientes responsables de cumplir con todas las regulaciones de transporte aplicables, mantener seguros vigentes y proporcionar un servicio seguro y profesional."
     },
     {
-      titulo: "Pagos y Tarifas",
+      titulo: "Tarifas y Pagos",
       icono: FaCreditCard,
-      contenido: "Las tarifas se calculan según la distancia y el tiempo del viaje. Los pagos se procesan a través de los métodos autorizados en la aplicación. F1 To Go se reserva el derecho de modificar las tarifas con previo aviso."
+      contenido: "Las tarifas se calculan considerando factores como distancia, tiempo, demanda y tipo de servicio. Los pagos se procesan a través de métodos seguros integrados en la aplicación. F1 TO GO cobra una comisión por la intermediación del servicio. Las tarifas pueden variar según condiciones del mercado y se informarán antes de confirmar el viaje."
     },
     {
-      titulo: "Cancelaciones",
+      titulo: "Cancelaciones y Modificaciones",
       icono: FaTimesCircle,
-      contenido: "Las cancelaciones pueden estar sujetas a cargos según el momento en que se realicen. Los detalles específicos de la política de cancelación se proporcionan en la aplicación antes de confirmar un viaje."
+      contenido: "Los usuarios pueden cancelar viajes según las políticas establecidas en la aplicación. Las cancelaciones tardías pueden generar cargos para compensar al conductor por el tiempo y recursos invertidos. Los detalles específicos de tiempos y tarifas de cancelación se muestran claramente en la aplicación antes de confirmar cada servicio."
+    },
+    {
+      titulo: "Responsabilidades y Limitaciones",
+      icono: FaShieldAlt,
+      contenido: "F1 TO GO no se hace responsable por daños, pérdidas o perjuicios derivados del servicio de transporte, ya que actúa únicamente como intermediario tecnológico. Los conductores son responsables de mantener seguros adecuados y cumplir con las regulaciones de tránsito. Los usuarios deben comportarse de manera respetuosa y seguir las instrucciones de seguridad."
+    },
+    {
+      titulo: "Propiedad Intelectual",
+      icono: FaGavel,
+      contenido: "Todos los derechos de propiedad intelectual sobre la aplicación, marca, logotipos y contenido pertenecen a F1 TO GO S.A.S. Los usuarios no pueden reproducir, distribuir o crear obras derivadas sin autorización expresa. El uso de la aplicación otorga únicamente una licencia limitada y revocable para acceder a los servicios."
+    },
+    {
+      titulo: "Terminación y Suspensión",
+      icono: FaExclamationTriangle,
+      contenido: "F1 TO GO puede suspender o terminar el acceso a los servicios por incumplimiento de estos términos, actividades fraudulentas, o comportamiento inapropiado. Los usuarios pueden cancelar su cuenta en cualquier momento. La terminación no afecta las obligaciones pendientes de pago o responsabilidades adquiridas durante el uso del servicio."
     }
   ]
 
@@ -50,8 +84,8 @@ const TerminosUso = () => {
       <Header />
       <main className="min-h-screen bg-gradient-to-br from-blue-50 via-white to-purple-50 pt-24">
         {/* Hero Section */}
-        <div className="relative overflow-hidden bg-gradient-to-r from-primary to-primary-light text-white">
-          <div className="absolute inset-0 bg-black opacity-20"></div>
+        <div className="relative overflow-hidden bg-gradient-to-r from-primary to-blue-700 text-white">
+          <div className="absolute inset-0 bg-black opacity-10"></div>
           <div className="relative container mx-auto px-4 py-20">
             <motion.div
               initial={{ opacity: 0, y: 30 }}
@@ -62,9 +96,18 @@ const TerminosUso = () => {
               <h1 className="text-5xl md:text-6xl font-bold mb-6 leading-tight">
                 Términos & Condiciones
               </h1>
-              <p className="text-xl md:text-2xl opacity-90 leading-relaxed">
+              <p className="text-xl md:text-2xl opacity-90 leading-relaxed mb-8">
                 Conoce nuestros términos de uso para una experiencia segura y transparente
               </p>
+              <motion.button
+                onClick={handleDownloadPDF}
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+                className="inline-flex items-center space-x-3 bg-white text-primary px-8 py-4 rounded-full font-semibold text-lg shadow-lg hover:shadow-xl transition-all duration-300"
+              >
+                <FaDownload className="text-xl" />
+                <span>Descargar PDF Completo</span>
+              </motion.button>
             </motion.div>
           </div>
           <div className="absolute bottom-0 left-0 right-0 h-20 bg-gradient-to-t from-white to-transparent"></div>
@@ -97,21 +140,38 @@ const TerminosUso = () => {
                           }`}
                         >
                           <IconComponent className="text-lg flex-shrink-0" />
-                          <span className="font-medium">{termino.titulo}</span>
+                          <span className="font-medium text-sm">{termino.titulo}</span>
                         </button>
                       )
                     })}
                   </nav>
                   
-                  <div className="mt-8 p-4 bg-gradient-to-r from-blue-50 to-purple-50 rounded-lg border border-blue-100">
-                    <h3 className="font-semibold text-gray-800 mb-2">¿Necesitas ayuda?</h3>
-                    <p className="text-sm text-gray-600 mb-3">
+                  <div className="mt-8 p-6 bg-gradient-to-r from-blue-50 to-purple-50 rounded-xl border border-blue-100">
+                    <h3 className="font-semibold text-gray-800 mb-2 flex items-center space-x-2">
+                      <FaPhone className="text-primary" />
+                      <span>¿Necesitas ayuda?</span>
+                    </h3>
+                    <p className="text-sm text-gray-600 mb-4">
                       Si tienes dudas sobre nuestros términos, contáctanos.
                     </p>
-                    <button className="text-primary hover:text-blue-700 font-medium text-sm transition-colors">
-                      Contactar Soporte →
-                    </button>
+                    <div className="space-y-2 text-sm">
+                      <p className="text-gray-700">
+                        <strong>Email:</strong> contacto@f1togo.com
+                      </p>
+                      <p className="text-gray-700">
+                        <strong>Soporte:</strong> f1togo.app@gmail.com
+                      </p>
+                    </div>
                   </div>
+
+                  {/* <div className="mt-6 p-4 bg-gradient-to-r from-secondary/10 to-secondary/5 rounded-lg border border-secondary/20">
+                    <h4 className="font-semibold text-gray-800 mb-2">Información Legal</h4>
+                    <p className="text-xs text-gray-600 leading-relaxed">
+                      F1 TO GO S.A.S - NIT: [Número de identificación]<br/>
+                      Domicilio: Colombia<br/>
+                      Regulado por la normativa colombiana
+                    </p>
+                  </div> */}
                 </div>
               </motion.div>
             </div>
@@ -132,7 +192,7 @@ const TerminosUso = () => {
                       initial={{ opacity: 0, y: 20 }}
                       animate={{ opacity: 1, y: 0 }}
                       transition={{ delay: index * 0.1 + 0.6 }}
-                      className="bg-white rounded-2xl shadow-lg overflow-hidden border border-gray-100 hover:shadow-xl transition-shadow duration-300"
+                      className="bg-white rounded-2xl shadow-lg overflow-hidden border border-gray-100 hover:shadow-xl transition-all duration-300"
                     >
                       <button
                         onClick={() => toggleSection(index)}
@@ -175,7 +235,7 @@ const TerminosUso = () => {
                 })}
               </motion.div>
 
-              {/* Additional Info */}
+              {/* Additional Info - MANTENIDA SIN CAMBIOS */}
               <motion.div
                 initial={{ opacity: 0, y: 30 }}
                 animate={{ opacity: 1, y: 0 }}
@@ -196,6 +256,33 @@ const TerminosUso = () => {
                   </span>
                 </div>
               </motion.div>
+
+              {/* Footer empresarial */}
+              {/* <motion.div
+                initial={{ opacity: 0, y: 30 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6, delay: 1.4 }}
+                className="mt-8 bg-white rounded-2xl shadow-lg p-8 border border-gray-100"
+              >
+                <div className="grid md:grid-cols-2 gap-8">
+                  <div>
+                    <h4 className="text-lg font-bold text-gray-800 mb-4">Información de la Empresa</h4>
+                    <div className="space-y-2 text-sm text-gray-600">
+                      <p><strong>Razón Social:</strong> F1 TO GO S.A.S</p>
+                      <p><strong>País:</strong> Colombia</p>
+                      <p><strong>Sector:</strong> Tecnología y Transporte</p>
+                    </div>
+                  </div>
+                  <div>
+                    <h4 className="text-lg font-bold text-gray-800 mb-4">Marco Legal</h4>
+                    <div className="space-y-2 text-sm text-gray-600">
+                      <p>Regulado por la legislación colombiana</p>
+                      <p>Cumplimiento de normativas de transporte</p>
+                      <p>Protección de datos según normativa vigente</p>
+                    </div>
+                  </div>
+                </div>
+              </motion.div> */}
             </div>
           </div>
         </div>

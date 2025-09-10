@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import Header from '../../Componentes/Header'
 import Footer from '../../Componentes/Footer'
 import { motion, AnimatePresence } from 'framer-motion'
-import { FaChevronDown, FaUserShield, FaDatabase, FaLock, FaShareAlt, FaEye } from 'react-icons/fa'
+import { FaChevronDown, FaUserShield, FaDatabase, FaLock, FaShareAlt, FaEye, FaDownload, FaFilePdf, FaPhone, FaEnvelope } from 'react-icons/fa'
 
 const PoliticasPrivacidad = () => {
   const [activeIndices, setActiveIndices] = useState([0])
@@ -17,38 +17,62 @@ const PoliticasPrivacidad = () => {
     })
   }
 
+  const handleDownloadPDF = () => {
+    const link = document.createElement('a')
+    link.href = '/src/assets/politicasyterminos/POLITICAS_DE_PRIVACIDAD_F1_TO_GO.pdf'
+    link.download = 'POLITICAS_DE_PRIVACIDAD_F1_TO_GO.pdf'
+    document.body.appendChild(link)
+    link.click()
+    document.body.removeChild(link)
+  }
+
   const politicas = [
     {
-      titulo: "Recopilación de Información Personal",
+      titulo: "Información que Recopilamos",
       icono: FaDatabase,
-      contenido: "En F1ToGo, recopilamos información personal como nombre, dirección de correo electrónico, número de teléfono, número de identificación, información de los vehículos  y datos de ubicación para proporcionar nuestros servicios de transporte. Esta información es necesaria para facilitar los viajes y garantizar la seguridad de nuestros usuarios y conductores."
+      contenido: "F1 TO GO recopila información personal necesaria para brindar nuestros servicios de transporte. Esto incluye: datos de identificación personal (nombre, documento de identidad, teléfono, correo electrónico), información de ubicación para conectar conductores y pasajeros, datos del vehículo para conductores, información de pago para procesar transacciones, y datos de uso de la aplicación para mejorar nuestros servicios. Toda esta información es recopilada con su consentimiento explícito."
     },
     {
-      titulo: "Uso de la Información",
+      titulo: "Cómo Utilizamos su Información",
       icono: FaEye,
-      contenido: "Utilizamos la información recopilada para conectar pasajeros con conductores, procesar pagos, mejorar nuestros servicios y garantizar la seguridad de nuestra plataforma. También podemos usar datos anónimos para análisis y mejora del servicio."
+      contenido: "Utilizamos su información personal para: facilitar la conexión entre conductores y pasajeros, procesar pagos de manera segura, verificar la identidad de usuarios y conductores, mejorar la seguridad de la plataforma, proporcionar soporte al cliente, cumplir con obligaciones legales y regulatorias, y desarrollar nuevas funcionalidades. No utilizamos su información para fines distintos a los descritos sin su consentimiento previo."
     },
     {
-      titulo: "Protección de Datos",
+      titulo: "Protección y Seguridad de Datos",
       icono: FaLock,
-      contenido: "Implementamos medidas de seguridad técnicas y organizativas para proteger su información personal contra acceso no autorizado, pérdida o alteración. Todos los datos se almacenan de forma segura y se transmiten utilizando encriptación."
+      contenido: "F1 TO GO implementa medidas de seguridad técnicas, administrativas y físicas para proteger su información personal. Utilizamos encriptación de datos tanto en tránsito como en reposo, sistemas de autenticación seguros, monitoreo continuo de seguridad, y acceso restringido a la información personal solo para personal autorizado. Realizamos auditorías regulares de seguridad y mantenemos nuestros sistemas actualizados con los últimos parches de seguridad."
     },
     {
-      titulo: "Compartir Información",
+      titulo: "Compartir y Divulgación de Información",
       icono: FaShareAlt,
-      contenido: "Solo compartimos su información con conductores y terceros necesarios para proporcionar nuestros servicios. No vendemos ni alquilamos su información personal."
+      contenido: "Compartimos su información personal únicamente cuando es necesario para: proporcionar nuestros servicios (con conductores para coordinar viajes), cumplir con obligaciones legales, proteger nuestros derechos y los de nuestros usuarios, y con proveedores de servicios que nos ayudan a operar la plataforma bajo estrictos acuerdos de confidencialidad. Nunca vendemos, alquilamos o comercializamos su información personal con terceros para fines de marketing."
     },
     {
-      titulo: "Derechos del Usuario",
+      titulo: "Sus Derechos como Usuario",
       icono: FaUserShield,
-      contenido: "Usted tiene derecho a acceder, rectificar, eliminar o limitar el procesamiento de sus datos personales. También puede solicitar la portabilidad de sus datos y retirar su consentimiento en cualquier momento contactándonos a través de nuestros canales oficiales."
+      contenido: "Usted tiene derecho a: acceder a su información personal que tenemos en nuestros registros, rectificar datos inexactos o incompletos, solicitar la eliminación de su información personal, limitar el procesamiento de sus datos, solicitar la portabilidad de sus datos, retirar su consentimiento en cualquier momento, y presentar quejas ante las autoridades de protección de datos. Para ejercer estos derechos, puede contactarnos a través de nuestros canales oficiales."
+    },
+    {
+      titulo: "Retención de Datos",
+      icono: FaDatabase,
+      contenido: "Conservamos su información personal solo durante el tiempo necesario para cumplir con los propósitos para los cuales fue recopilada, incluyendo requisitos legales, contables o de informes. Los datos de viajes se conservan por un período de 5 años para fines de seguridad y cumplimiento legal. Los datos de pago se conservan según los requisitos de las entidades financieras y regulatorias."
+    },
+    {
+      titulo: "Transferencias Internacionales",
+      icono: FaShareAlt,
+      contenido: "En caso de que sea necesario transferir su información personal fuera del país, nos aseguraremos de que existan las salvaguardas adecuadas para proteger su información, incluyendo acuerdos de transferencia de datos que cumplan con los estándares internacionales de protección de datos."
+    },
+    {
+      titulo: "Menores de Edad",
+      icono: FaUserShield,
+      contenido: "Nuestros servicios están dirigidos a personas mayores de 18 años. No recopilamos intencionalmente información personal de menores de edad. Si nos enteramos de que hemos recopilado información de un menor, tomaremos medidas para eliminar dicha información de nuestros sistemas."
     }
   ]
 
   return (
     <>
       <Header />
-      <main className="min-h-screen bg-gradient-to-br from-green-50 via-white to-blue-50 pt-24">
+      <main className="min-h-screen bg-gradient-to-br from-blue-50 via-white to-gray-50 pt-24">
         {/* Hero Section */}
         <div className="relative overflow-hidden bg-gradient-to-r from-primary to-blue-600 text-white">
           <div className="absolute inset-0 bg-black opacity-20"></div>
@@ -62,9 +86,21 @@ const PoliticasPrivacidad = () => {
               <h1 className="text-5xl md:text-6xl font-bold mb-6 leading-tight">
                 Políticas de Privacidad
               </h1>
-              <p className="text-xl md:text-2xl opacity-90 leading-relaxed">
+              <p className="text-xl md:text-2xl opacity-90 leading-relaxed mb-8">
                 Tu privacidad es nuestra prioridad. Conoce cómo protegemos tus datos
               </p>
+              
+              {/* PDF Download Button */}
+              <motion.button
+                onClick={handleDownloadPDF}
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+                className="inline-flex items-center space-x-3 bg-secondary hover:bg-yellow-500 text-primary font-bold py-4 px-8 rounded-xl transition-all duration-300 shadow-lg hover:shadow-xl"
+              >
+                <FaFilePdf className="text-2xl" />
+                <span className="text-lg">Descargar PDF Completo</span>
+                <FaDownload className="text-lg" />
+              </motion.button>
             </motion.div>
           </div>
           <div className="absolute bottom-0 left-0 right-0 h-20 bg-gradient-to-t from-white to-transparent"></div>
@@ -97,20 +133,45 @@ const PoliticasPrivacidad = () => {
                           }`}
                         >
                           <IconComponent className="text-lg flex-shrink-0" />
-                          <span className="font-medium">{politica.titulo}</span>
+                          <span className="font-medium text-sm">{politica.titulo}</span>
                         </button>
                       )
                     })}
                   </nav>
                   
-                  <div className="mt-8 p-4 bg-gradient-to-r from-blue-50 to-blue-50 rounded-lg border border-blue-100">
-                    <h3 className="font-semibold text-gray-800 mb-2">Protección Garantizada</h3>
-                    <p className="text-sm text-gray-600 mb-3">
-                      Cumplimos con las normativas internacionales de protección de datos.
+                  {/* Download Section */}
+                  <div className="mt-8 p-6 bg-gradient-to-r from-primary/5 to-blue-50 rounded-xl border border-blue-100">
+                    <h3 className="font-bold text-primary mb-3 flex items-center space-x-2">
+                      <FaFilePdf className="text-lg" />
+                      <span>Documento Oficial</span>
+                    </h3>
+                    <p className="text-sm text-gray-600 mb-4">
+                      Descarga el documento completo de nuestras políticas de privacidad en formato PDF.
                     </p>
-                    <div className="flex items-center space-x-2 text-primary">
-                      <FaLock className="" />
-                      <span className=" font-medium text-sm">Datos Seguros</span>
+                    <button
+                      onClick={handleDownloadPDF}
+                      className="w-full bg-primary hover:bg-primary/90 text-white font-medium py-3 px-4 rounded-lg transition-colors duration-300 flex items-center justify-center space-x-2"
+                    >
+                      <FaDownload className="text-sm" />
+                      <span>Descargar PDF</span>
+                    </button>
+                  </div>
+
+                  {/* Contact Section */}
+                  <div className="mt-6 p-6 bg-gray-50 rounded-xl">
+                    <h3 className="font-bold text-gray-800 mb-3">¿Tienes Preguntas?</h3>
+                    <p className="text-sm text-gray-600 mb-4">
+                      Contáctanos para resolver cualquier duda sobre nuestras políticas.
+                    </p>
+                    <div className="space-y-2">
+                      <a href="mailto:informacion@f1togo.com" className="flex items-center space-x-2 text-primary hover:text-primary/80 text-sm">
+                        <FaEnvelope className="text-xs" />
+                        <span>informacion@f1togo.com</span>
+                      </a>
+                      <div className="flex items-center space-x-2 text-gray-600 text-sm">
+                        <FaPhone className="text-xs" />
+                        <span>Lun-Vie: 9:00 AM - 6:00 PM</span>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -143,7 +204,7 @@ const PoliticasPrivacidad = () => {
                           <div className={`p-3 rounded-full transition-colors ${
                             activeIndices.includes(index)
                               ? 'bg-blue-100 text-primary'
-                              : 'bg-gray-100 text-gray-600 group-hover:bg-blue-50 group-hover:text-primary-light'
+                              : 'bg-gray-100 text-gray-600 group-hover:bg-blue-50 group-hover:text-primary'
                           }`}>
                             <IconComponent className="text-xl" />
                           </div>
@@ -151,7 +212,7 @@ const PoliticasPrivacidad = () => {
                         </div>
                         <FaChevronDown
                           className={`text-gray-400 transition-transform duration-300 ${
-                            activeIndices.includes(index) ? 'rotate-180 text-primary' : 'group-hover:text-primary-light'
+                            activeIndices.includes(index) ? 'rotate-180 text-primary' : 'group-hover:text-primary'
                           }`}
                         />
                       </button>
@@ -209,7 +270,6 @@ const PoliticasPrivacidad = () => {
                   <span className="bg-white bg-opacity-20 px-4 py-2 rounded-full text-sm font-medium">
                     Última actualización: Junio 2025
                   </span>
-                 
                 </div>
               </motion.div>
             </div>
