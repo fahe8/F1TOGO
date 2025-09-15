@@ -19,7 +19,7 @@ const PoliticasPrivacidad = () => {
 
   const handleDownloadPDF = () => {
     const link = document.createElement('a')
-    link.href = '/src/assets/politicasyterminos/POLITICAS_DE_PRIVACIDAD_F1_TO_GO.pdf'
+    link.href = '/pdfs/POLITICAS_DE_PRIVACIDAD_F1_TO_GO.pdf'
     link.download = 'POLITICAS_DE_PRIVACIDAD_F1_TO_GO.pdf'
     document.body.appendChild(link)
     link.click()

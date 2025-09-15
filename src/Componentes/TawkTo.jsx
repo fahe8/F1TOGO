@@ -14,7 +14,7 @@ const TawkTo = () => {
     // Crear y cargar el script de Tawk.to
     const script = document.createElement('script')
     script.async = true
-    script.src = 'https://embed.tawk.to/685b00291be62d190d341c44/1iuhnh8e4'
+    script.src = 'https://embed.tawk.to/68c210462d363c192cba699a/1j4r0v575'
     script.charset = 'UTF-8'
     script.setAttribute('crossorigin', '*')
     

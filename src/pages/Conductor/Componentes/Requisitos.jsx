@@ -23,7 +23,7 @@ const Requisitos = () => {
           Requisitos
         </motion.h2>
 
-        <div className="max-w-3xl mx-auto grid grid-cols-2 gap-6">
+        <div className="max-w-3xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-6">
           {requisitos.map((requisito, index) => (
             <motion.div
               key={index}

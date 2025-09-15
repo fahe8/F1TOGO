@@ -20,7 +20,7 @@ const TerminosUso = () => {
   const handleDownloadPDF = () => {
     try {
       const link = document.createElement('a')
-      link.href = '/src/assets/politicasyterminos/TERMINOS_Y_CONDICIONES_DE_USO_F1_TO_GO.pdf'
+      link.href = '/pdfs/TERMINOS_Y_CONDICIONES_DE_USO_F1_TO_GO.pdf'
       link.download = 'TERMINOS_Y_CONDICIONES_DE_USO_F1_TO_GO.pdf'
       document.body.appendChild(link)
       link.click()
